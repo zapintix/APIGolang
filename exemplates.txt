@@ -1,0 +1,11 @@
+curl http://localhost:8080/albums/
+###
+curl http://localhost:8080/albums/2
+###
+curl -X "POST" http://localhost:8080/albums
+--data '{"ID": "3","title": "Бомбу клак","artist": "Дима","price": 89.99}'
+###
+curl -X "DELETE" http://localhost:8080/albums/1
+###
+curl -X "PUT" http://localhost:8080/albums/4
+--data '{"title": "Картопля","artist": "Виталя","price": 50.00}'
